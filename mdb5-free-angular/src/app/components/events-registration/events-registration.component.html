@@ -1,0 +1,53 @@
+<h1>Event Registration</h1>
+<form>
+  <!-- Title input -->
+  <div class="form-outline mb-4">
+    <input
+      type="text"
+      id="title"
+      class="form-control"
+    />
+    <label
+      class="form-label"
+      for="form1Example1"
+    >Event title</label>
+  </div>
+  <!-- Description input -->
+  <div class="form-outline mb-4">
+    <input
+      type="text"
+      id="description"
+      class="form-control"
+    />
+    <label
+      class="form-label"
+      for="form1Example2"
+    >Event description</label>
+  </div>
+  <!-- Start Date input -->
+  <div class="form-outline mb-4">
+    <label for="start" class="me-2">Start date:</label>
+    <input
+      type="date"
+      id="start"
+      name="event-start"
+      class="form-control"
+    >
+  </div>
+  <!-- End Date input -->
+  <div class="form-outline mb-4">
+    <label for="start" class="me-2">End date:</label>
+    <input
+      type="date"
+      id="end"
+      name="event-end"
+      class="form-control"
+    >
+  </div>
+  <!-- Submit button -->
+  <button
+    type="submit"
+    class="btn btn-primary btn-block mb-4"
+    (click)="registerNewEvent()"
+  >Register Event</button>
+</form>
