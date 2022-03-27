@@ -11,10 +11,10 @@ export class MainComponent {
   events: Event[];
 
   constructor(private readonly eventService: EventsService) {
-    this.eventService.getEvents().subscribe(e => this.events = e);
+    this.eventService.getEvents().pipe().subscribe(e => this.events = e);
   }
 
   registerNewEvent(event: Event) {
-    this.eventService.addNewEvent(event).subscribe(e => console.log(e));
+    this.eventService.addNewEvent(event).subscribe(e => this.events = [...this.events, e]);
   }
 }

@@ -1,6 +1,8 @@
-<main>
-  <div class="container-fluid mt-5 d-flex justify-content-center">
-    <app-events-registration class="container w-25 shadow-5 p-5 align-self-start" (newEventRegistered)="registerNewEvent($event)"></app-events-registration>
-    <app-events-list class="container w-50 shadow-5 p-5" [events]="events"></app-events-list>
+<main class="container-fluid mt-5 d-flex justify-content-center">
+  <div class="container w-25 shadow-5 p-5 align-self-start">
+    <app-events-registration (newEventRegistered)="registerNewEvent($event)"></app-events-registration>
+  </div>
+  <div class="container w-50 shadow-5 p-5">
+    <app-events-list [events]="events"></app-events-list>
   </div>
 </main>

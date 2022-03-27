@@ -17,7 +17,6 @@ export class EventsService {
   addNewEvent(event: Event) {
     return this.httpClient
       .post<Event>(this.url, event, { headers: this.headers })
-      .pipe();
   }
 
   getEvents() {

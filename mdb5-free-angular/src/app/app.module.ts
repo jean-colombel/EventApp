@@ -11,6 +11,7 @@ import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventsRegistrationComponent } from './components/events-registration/events-registration.component';
 import { EventsListComponent } from './components/events-list/events-list.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { EventsListComponent } from './components/events-list/events-list.compon
     MdbModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
