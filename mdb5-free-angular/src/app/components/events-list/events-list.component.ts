@@ -12,6 +12,7 @@ export class EventsListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.events);
   }
 
 }

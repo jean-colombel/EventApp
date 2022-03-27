@@ -8,7 +8,7 @@ import { EventsService } from 'src/app/services/events.service';
 })
 export class MainComponent {
 
-  events: Event[];
+  events: Event[] = [];
 
   constructor(private readonly eventService: EventsService) {
     this.eventService.getEvents().pipe().subscribe(e => this.events = e);
