@@ -8,3 +8,5 @@
 ### For the back-end (Web API), I used the .NET framework v6.0, they are no further requirements.
 
 1. Launch the KumojinAPI
+
+The WebAPI uses an *inMemory* database, all changes will be lost after closing.
